@@ -1,0 +1,10 @@
+project: steghide
+target: steghide
+
+duration: 60
+
+testsuite:
+  - file://example.img
+
+cmds:
+  - cmd: steghide embed -ef secret.txt -cf @@
